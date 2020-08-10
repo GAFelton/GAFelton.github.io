@@ -6,6 +6,10 @@
     background-color: rgba(179, 179, 179, 0.377);
 }
 
+#resume-cell {
+    height: 60rem;
+}
+
 @media screen and (max-width: 39.9375em) {
     .screenshot-carousel {
         max-width: 95vw;
