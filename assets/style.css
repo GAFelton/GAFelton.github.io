@@ -1,3 +1,7 @@
+.callout-background {
+    background-color: rgb(252, 242, 228);
+}
+
 .screenshot-carousel {
     max-width: 50vw;
 }
@@ -7,7 +11,11 @@
 }
 
 #resume-cell {
-    height: 60rem;
+    height: 66rem;
+}
+
+#codequiz-margin {
+    margin-top: 6em;
 }
 
 @media screen and (max-width: 39.9375em) {
