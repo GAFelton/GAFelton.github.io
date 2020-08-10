@@ -97,10 +97,22 @@
               I WANT to easily access up-to-date information in one page<br>
               SO THAT I can make informed decisions when planning my day.</p>
 
+            <p><strong>Project Details:</strong></p>
+            <p>This was a 6-person group project. For all of us, it was our first time collaborating through GitHub. I
+              took a leadership role in building this webpage: Once we decided what we were doing, I wrote up our
+              project proposal & built the initial wireframe for the dashboard.
+              <br>
+              On the front-end team, I learned Zurb Foundation & built the dashboard page from the ground-up. I found &
+              hooked up the clickable map for the landing page (index.html). I made the site responsive and did 1/2 of
+              the work to make it screen-reader accessible.<br>
+              I also put a lot of effort into project management: I managed the Kanban board & GitHub issues, and made
+              sure tasks were divyed up. I wrote up a git workflow & placed it in the GitHub wiki, and also spent time
+              1:1 with my teammates making sure everyone understood branching & making pull requests.
+            </p>
           </div>
           <div class="cell small-12 medium-7 large-6 screenshot-carousel" data-sticky-container>
-            <div class="sticky" data-sticky data-options="marginTop:3;" data-top-anchor="covid-section-top:top"
-              data-btm-anchor="covid-section-bottom:bottom">
+            <div class="sticky" data-sticky data-options="marginTop:3; marginBottom:1;"
+              data-top-anchor="covid-section-top:top" data-btm-anchor="covid-section-bottom:bottom">
               <div class="orbit" role="region" aria-label="Slide Deck of Project Screenshots" data-orbit
                 data-use-m-u-i="false">
                 <!--(For Animations, replace data-use-m-u-i:) data-options="animInFromLeft:slide-in-left; animInFromRight:slide-in-right; animOutToLeft:slide-out-left; animOutToRight:slide-out-right;" -->
@@ -207,9 +219,106 @@
             business sense and passion for problem-solving to bear in building the next big thing.</p>
         </div>
       </div>
+
+      <hr>
+
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-12 medium-7 large-6 screenshot-carousel" data-sticky-container>
+            <div class="sticky" data-sticky data-options="marginTop:3; marginBottom:1;"
+              data-top-anchor="weather-section-top:top" data-btm-anchor="weather-section-bottom:bottom">
+              <div class="orbit" role="region" aria-label="Slide Deck of Project Screenshots" data-orbit
+                data-use-m-u-i="false">
+                <!--(For Animations, replace data-use-m-u-i:) data-options="animInFromLeft:slide-in-left; animInFromRight:slide-in-right; animOutToLeft:slide-out-left; animOutToRight:slide-out-right;" -->
+                <ul class="orbit-container">
+                  <button class="orbit-previous carousel-buttons" aria-label="previous"><span
+                      class="show-for-sr">Previous
+                      Slide</span>&#9664;</button>
+                  <button class="orbit-next carousel-buttons" aria-label="next"><span class="show-for-sr">Next
+                      Slide</span>&#9654;</button>
+                  <li class="orbit-slide is-active">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/weather-dashboard-screenshot.jpg"
+                        alt="Screenshot of the weather dashboard.">
+                      <figcaption class="orbit-caption">Weather Dashboard, with saved searches.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/weather-init.jpg"
+                        alt="Screenshot of the weather dashboard on load - there is only a search bar.">
+                      <figcaption class="orbit-caption">On first page load. All other elements are dynamically generated.</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cell small-12 medium-5 large-6">
+            <h2 id="weather-section-top"> Project: Weather Dashboard </h2>
+            <p><strong>Description</strong></p>
+            <p>Weather Dashboard - Created a webpage to display current weather conditions and 5 day forecast based on
+              user
+              input. Used the 3 aspects of the OpenWeatherMap API: Current Conditions, UV Index, and the 5 Day Forecast.
+              Stored previous searches in local storage, and populated a list of previous searches.
+
+            </p>
+            <a href="https://gafelton.github.io/weather-dashboard-6/">Link to Deployed Project</a>
+            <strong> | </strong>
+            <a href="https://github.com/GAFelton/weather-dashboard-6">Link to GitHub Repo</a>
+            <hr>
+            <div class="grid-x">
+              <div class="cell auto">
+                <p><strong>Tools Used:</strong></p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS / Bootstrap</li>
+                  <li>JavaScript / jQuery</li>
+                </ul>
+              </div>
+              <div class="cell auto">
+                <p><strong>APIs Used:</strong></p>
+                <ul>
+                  <li>OpenWeatherMap API:
+                    <ul>
+                      <li>Current Conditions</li>
+                      <li>UV Index</li>
+                      <li>Five Day Forecast</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p><strong>User Story:</strong></p>
+            <p>AS A traveler <br>
+              I WANT to see the weather outlook for multiple cities<br>
+              SO THAT I can plan a trip accordingly.</p>
+
+            <p><strong>Project Details:</strong></p>
+            <p>I have two main API calls - for the current weather data and the 5 day forecast. The UV index is also a
+              separate API call nested within the current weather data call, because it requires coordinates generated
+              from
+              the first API. Nearly all page elements are dynamically generated - the page first loads with just a
+              search
+              bar.
+              <br>
+              Previous searches are stored in localStorage, and if the user revisits the page their most recent search
+              will
+              populate the page. Users have the option to delete this list of previous searches. Additionally, if the
+              list
+              starts getting too long, it will collapse the list and allow access via a button.
+              <br>
+              I also implemented error messaging for 404 or other problems, and stop users from making blank searches.
+              If a
+              user searches for the same city twice, it will not populate the previous searches list twice.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr id="weather-section-bottom">
+
     </div>
   </div>
-
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
     integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
