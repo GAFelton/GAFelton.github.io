@@ -17,22 +17,22 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas position-right reveal-for-large" id="my-info" data-off-canvas>
       <div class="grid-x grid-padding-x">
-        <div class="cell">
+        <div class="cell align-center">
           <br>
           <img class="thumbnail" src="./assets/images/g-headshot.JPG">
-          <h5 class="text-center">George Felton</h5>
+          <h1 class="h3" class="align-center">George Felton</h1>
           <p class="text-center">I combine strategic thinking, entrepreneurial grit, and technical web development
             skills to solve problems.</p>
-          <h6 class="text-center">Contact Me:</h6>
+          <p class="text-center"><strong>Contact Me:</strong></p>
           <ul aria-label="Contact Me and Social Media Links Menu" class="vertical menu text-center">
             <li><a
-                href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out">E-mail</a>
+                href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" target="_blank" rel="noopener noreferrer">E-mail</a>
             </li>
             <li><a href="https://www.linkedin.com/in/george-a-felton/">LinkedIn</a></li>
             <li><a href="https://github.com/GAFelton">GitHub</a></li>
-            <li><a
-              href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf">Resume (Download)</a></li>
-          </ul>
+            <li><a href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf">Resume
+                (Download)</a></li>
+          </ul> 
         </div>
       </div>
     </div>
@@ -48,22 +48,43 @@
         </div>
       </div>
       <div class="callout callout-background">
+        <a name="page-top"></a>
         <div class="grid-x">
-          <div class="cell">
-            <a name="page-top"></a>
-            <h1 class="h1 text-right">George Felton's Portfolio</h1>
-            <nav></nav>
-            <p class="lead text-justify">I am a quick-learning entreprenuerially-minded Seattleite with a passion for
-              making great products. I am currently enrolled in a full-stack web development coding bootcamp through UW
-              which will wrap up in November, 2020. In my spare time, I love to cook, travel, and play board games with
-              friends. <br></p>
-            <p class="h3"><strong>Seeking a front-end web development internship.</strong></p>
-
+          <div class="cell small-12 medium-auto">
+            <h1 class="h1">George Felton's Portfolio</h1>
+          </div>
+          <div class="cell small-12 medium-shrink">
+            <nav>
+              <ul class="dropdown menu menu-z-index" data-dropdown-menu>
+                <li><a href="#">Projects</a>
+                  <ul class="menu">
+                    <li><a href="#covid-project">Project: Covid Dashboard</a></li>
+                    <li><a href="#weather-project">Project: Weather Dashboard</a></li>
+                    <li><a href="#code-quiz-project">Project: Code Quiz</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Materials</a>
+                  <ul class="menu">
+                    <li><a href="#brand-statement">Brand Statement</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
+          <p class="lead text-justify">I am a quick-learning entreprenuerially-minded Seattleite with a passion for
+            making great products. I am currently enrolled in a full-stack web development coding bootcamp through UW
+            which will wrap up in November, 2020. In my spare time, I love to cook, travel, and play board games with
+            friends. <br></p>
+          <p class="h3"><strong>Seeking a front-end web development internship.</strong></p>
+
+        
       </div>
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
+          <a name="covid-project"></a>
           <div class="cell small-12 medium-5 large-6">
             <h2 id="covid-section-top"> Project: Covid-19 Dashboard </h2>
             <p><strong>Description</strong></p>
@@ -210,8 +231,9 @@
       <hr id="covid-section-bottom">
       <div class="callout callout-background">
         <div class="grid-x grid-padding-x">
+          <a name="brand-statement"></a>
           <div class="cell">
-            <h1>Hello! I am seeking a front-end web development internship.</h1>
+            <h3 class="h1">Brand Statement</h3>
             <p class="lead">Front-end web developer leveraging business education and experience combined with technical
               web
               development skills to build powerful, user-focused web-apps. Graduated with honors from the Master of
@@ -232,6 +254,7 @@
 
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
+          <a name="weather-project"></a>
           <div class="cell small-12 medium-7 large-6 screenshot-carousel" data-sticky-container>
             <div class="sticky" data-sticky data-options="marginTop:3; marginBottom:1;"
               data-top-anchor="weather-section-top:top" data-btm-anchor="weather-section-bottom:bottom">
@@ -264,7 +287,7 @@
             </div>
           </div>
           <div class="cell small-12 medium-5 large-6">
-            <h2 id="weather-section-top"> Project: Weather Dashboard </h2>
+            <h4 class="h2" id="weather-section-top"> Project: Weather Dashboard </h4>
             <p><strong>Description</strong></p>
             <p>Weather Dashboard - Created a webpage to display current weather conditions and 5 day forecast based on
               user
@@ -328,7 +351,8 @@
       <hr id="weather-section-bottom">
       <div class="grid-x grid-padding-x">
         <div class="cell" id="resume-cell">
-          <h3 class="text-center">My Resume:</h3>
+          <a name="resume"></a>
+          <h5 class=" h3 text-center">My Resume:</h5>
           <p class="text-center"><a
               href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf"><em>(Link
                 to Download)</em></a></p>
@@ -340,8 +364,9 @@
       <hr>
       <div class="grid-container">
         <div class="grid-x grid-margin-x" id="codequiz-margin">
+          <a name="code-quiz-project"></a>
           <div class="cell small-12 medium-5 large-6">
-            <h2> Project: Code Quiz</h2>
+            <h6 class="h2"> Project: Code Quiz</h6>
             <p id="codequiz-section-top"><strong>Description</strong></p>
             <p>Created a responsive quiz web-app that uses localStorage to hold high scores and dynamically generates
               questions and buttons. The app stores questions in an array of objects, making it very easy to add new
@@ -449,15 +474,16 @@
       </div>
       <hr id="codequiz-section-bottom">
       <div class="callout callout-background" id="bottom-callout">
-        <h4 class="text-center">Interested? Please Reach Out:</h4>
+        <a name="contact-me"></a>
+        <h6 class="h1 text-center">Interested? Please Reach Out:</h6>
         <ul aria-label="Contact Me and Social Media Links Menu" class="menu align-center">
           <li><a
               href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out">E-mail</a>
           </li>
           <li><a href="https://www.linkedin.com/in/george-a-felton/">LinkedIn</a></li>
           <li><a href="https://github.com/GAFelton">GitHub</a></li>
-          </ul>
-          <p class="text-center"><a href="#page-top" aria-label="Return to Top of Page.">Return to Top</a></p>
+        </ul>
+        <p class="text-center"><a href="#page-top" aria-label="Return to Top of Page.">Return to Top</a></p>
       </div>
     </div>
   </div>
