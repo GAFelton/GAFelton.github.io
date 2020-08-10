@@ -63,7 +63,7 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell small-12 medium-5 large-6">
-            <h2> Covid-19 Dashboard </h2>
+            <h2 id="covid-section-top"> Covid-19 Dashboard </h2>
             <p><strong>Description</strong></p>
             <p>This COVID-19 tracking dashboard website pulls up-to-date covid-19 information via 3rd party APIs then
               present the data in a cohesive, simple dashboard. Data is segmented into a few categories: Statistical
@@ -94,37 +94,40 @@
             </div>
 
           </div>
-          <div class="cell small-12 medium-7 large-6 screenshot-carousel">
-            <div class="orbit" role="region" aria-label="Slide Deck of Project Screenshots" data-orbit
-              data-use-m-u-i="false">
-              <!--(For Animations, replace data-use-m-u-i:) data-options="animInFromLeft:slide-in-left; animInFromRight:slide-in-right; animOutToLeft:slide-out-left; animOutToRight:slide-out-right;" -->
-              <ul class="orbit-container">
-                <button class="orbit-previous carousel-buttons" aria-label="previous"><span class="show-for-sr">Previous
-                    Slide</span>&#9664;</button>
-                <button class="orbit-next carousel-buttons" aria-label="next"><span class="show-for-sr">Next
-                    Slide</span>&#9654;</button>
-                <li class="orbit-slide is-active">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="assets/images/dashboard.png"
-                      alt="Screenshot of the covid-19 dashboard.">
-                    <figcaption class="orbit-caption">Covid-19 Dashboard</figcaption>
-                  </figure>
-                </li>
-                <li class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="assets/images/index.png"
-                      alt="Screenshot of the covid-19 landing page, with clickable map.">
-                    <figcaption class="orbit-caption">Covid-19 Landing Page with clickable map.</figcaption>
-                  </figure>
-                </li>
-                <li class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="assets/images/dashboard-screenshot.png"
-                      alt="Screenshot of the covid-19 project wireframe.">
-                    <figcaption class="orbit-caption">Covid-19 Dashboard Wireframe</figcaption>
-                  </figure>
-                </li>
-              </ul>
+          <div class="cell small-12 medium-7 large-6 screenshot-carousel" data-sticky-container>
+            <div class="sticky" data-sticky data-top-anchor="covid-section-top:top" data-btm-anchor="covid-section-bottom:bottom">
+              <div class="orbit" role="region" aria-label="Slide Deck of Project Screenshots" data-orbit
+                data-use-m-u-i="false">
+                <!--(For Animations, replace data-use-m-u-i:) data-options="animInFromLeft:slide-in-left; animInFromRight:slide-in-right; animOutToLeft:slide-out-left; animOutToRight:slide-out-right;" -->
+                <ul class="orbit-container">
+                  <button class="orbit-previous carousel-buttons" aria-label="previous"><span
+                      class="show-for-sr">Previous
+                      Slide</span>&#9664;</button>
+                  <button class="orbit-next carousel-buttons" aria-label="next"><span class="show-for-sr">Next
+                      Slide</span>&#9654;</button>
+                  <li class="orbit-slide is-active">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/dashboard.png"
+                        alt="Screenshot of the covid-19 dashboard.">
+                      <figcaption class="orbit-caption">Covid-19 Dashboard</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/index.png"
+                        alt="Screenshot of the covid-19 landing page, with clickable map.">
+                      <figcaption class="orbit-caption">Covid-19 Landing Page with clickable map.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/dashboard-screenshot.png"
+                        alt="Screenshot of the covid-19 project wireframe.">
+                      <figcaption class="orbit-caption">Covid-19 Dashboard Wireframe</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +186,7 @@
         </div>
       </div> -->
 
-      <hr>
+      <hr id="covid-section-bottom">
       <div class="grid-x">
         <div class="cell">
           <h1>Hello! I am seeking a front-end web development internship.</h1>
