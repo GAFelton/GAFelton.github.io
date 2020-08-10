@@ -18,6 +18,10 @@
     margin-top: 6em;
 }
 
+#bottom-callout {
+    margin-bottom: 0px;
+}
+
 @media screen and (max-width: 39.9375em) {
     .screenshot-carousel {
         max-width: 95vw;
