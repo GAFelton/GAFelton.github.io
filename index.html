@@ -247,7 +247,8 @@
                     <figure class="orbit-figure">
                       <img class="orbit-image" src="assets/images/weather-init.jpg"
                         alt="Screenshot of the weather dashboard on load - there is only a search bar.">
-                      <figcaption class="orbit-caption">On first page load. All other elements are dynamically generated.</figcaption>
+                      <figcaption class="orbit-caption">On first page load. All other elements are dynamically
+                        generated.</figcaption>
                     </figure>
                   </li>
                 </ul>
@@ -295,7 +296,7 @@
               SO THAT I can plan a trip accordingly.</p>
 
             <p><strong>Project Details:</strong></p>
-            <p>I have two main API calls - for the current weather data and the 5 day forecast. The UV index is also a
+            <p>On this solo project, I have two main API calls - for the current weather data and the 5 day forecast. The UV index is also a
               separate API call nested within the current weather data call, because it requires coordinates generated
               from
               the first API. Nearly all page elements are dynamically generated - the page first loads with just a
@@ -319,11 +320,113 @@
       <div class="grid-x grid-padding-x">
         <div class="cell" id="resume-cell">
           <h3 class="text-center">My Resume:</h3>
-          <iframe src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
+          <p class="text-center"><a href="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf"><em>(Link to Download)</em></a></p>
+          <iframe
+            src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true"
+            style="width:100%; height:100%;" frameborder="0"></iframe>
         </div>
       </div>
       <hr>
-      
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-12 medium-5 large-6">
+            <h2> Project: Code Quiz</h2>
+            <p id="codequiz-section-top"><strong>Description</strong></p>
+            <p>Created a responsive quiz web-app that uses localStorage to hold high scores and dynamically generates questions and buttons. The app stores questions in an array of objects, making it very easy to add new questions to the quiz. Answer positions are jumbled each time the quiz is taken. The player's score is the amount of time remaining when they finish the quiz. </p>
+            <a href="https://gafelton.github.io/homework-code-quiz-4/">Link to Deployed Project</a>
+            <strong> | </strong>
+            <a href="https://github.com/GAFelton/homework-code-quiz-4">Link to GitHub Repo</a>
+            <hr>
+                <p><strong>Tools Used:</strong></p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+            <p><strong>User Story:</strong></p>
+            <p>AS A coding bootcamp student <br>
+              I WANT to take a timed quiz on JavaScript fundamentals that stores high scores<br>
+              SO THAT I can gauge my progress compared to my peers.</p>
+  
+
+            <p><strong>Project Details:</strong></p>
+            <p>There were many parameters to consider on this solo project - the HTML/CSS, the timer, the button controls, using localStorage, and more. I gave myself the added challenge of not using any CSS libraries, which solidified my understanding of what the columns system is and how it works for building great webpages.<br>
+            After the initial setup and figuring out the data structure, my work was split into a couple main areas:<br>
+              <ul>
+                <li> Rendering the questions & handling Answer clicks, including validation.</li>
+                <li>Controlling the timer, making sure it stopped when needed and translated into score.</li>
+                <li>Displaying the various pages and creating links to retake or start the quiz.</li>
+                <li>Storing new high score entries as objects in an array, which is then pushed & pulled from localStorage.</li>
+            </ul>
+              I also had fun coming up with basic JavaScript questions. The next version of this quiz app should include an area for code snippets in questions, track which question the user is on (ex. 2/12), and the ability for the user to set difficulty (a.k.a. time per question, which is currently set to 15 seconds/question).<br>
+              <strong>Below is the original Pseudocode I wrote when designing the project:</strong><br>
+              <code>/* CODE QUIZ PSEUDOCODE<br>
+                Question storage: Array for each question. Each question is an object. Within each object, there are three parameters: Question, Possible Answers[], Correct Answer Index.<br>
+                
+                on button click, start timer.<br>
+                display questions:<br>
+                -each question has 4 possible answers. (display answers in random order)<br>
+                -on correct answer click, say "Correct" and move to the next question.<br>
+                -on incorrect answer click, say "Incorrect", deduct 15 seconds from timer, and move to the next question.<br>
+                q1<br>
+                q2<br>
+                q3<br>
+                q4<br>
+                q5<br>
+                -Hard code as little as possible so that questions are easy to add/remove. Quiz duration, number of possible answers, the order randomizer are all based on quizArray.length.<br>
+                
+                Game Over: When timer = 0 or when user completes all questions, end the quiz.<br>
+                Input form to save initials and score (to localStorage). Sort initials in descending order, show highest score.<br>
+                */</code>
+            </p>
+          </div>
+          <div class="cell small-12 medium-7 large-6 screenshot-carousel" data-sticky-container>
+            <div class="sticky" data-sticky data-options="marginTop:3; marginBottom:1;"
+              data-top-anchor="codequiz-section-top:top" data-btm-anchor="codequiz-section-bottom:bottom">
+              <div class="orbit" role="region" aria-label="Slide Deck of Project Screenshots" data-orbit
+                data-use-m-u-i="false">
+                <!--(For Animations, replace data-use-m-u-i:) data-options="animInFromLeft:slide-in-left; animInFromRight:slide-in-right; animOutToLeft:slide-out-left; animOutToRight:slide-out-right;" -->
+                <ul class="orbit-container">
+                  <button class="orbit-previous carousel-buttons" aria-label="previous"><span
+                      class="show-for-sr">Previous
+                      Slide</span>&#9664;</button>
+                  <button class="orbit-next carousel-buttons" aria-label="next"><span class="show-for-sr">Next
+                      Slide</span>&#9654;</button>
+                  <li class="orbit-slide is-active">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/welcome-codequiz.jpg"
+                        alt="Screenshot of the Code Quiz start page & rules description.">
+                      <figcaption class="orbit-caption">Start of the Code Quiz & Rules Explanation.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/screenshot-code-quiz.jpg"
+                        alt="Screenshot of the code quiz in action, on one of the questions.">
+                      <figcaption class="orbit-caption">The Code Quiz in Action.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/codequiz-high-score.jpg"
+                        alt="Screenshot of the high score page of the Code Quiz.">
+                      <figcaption class="orbit-caption">Code Quiz High Score Page.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="assets/images/codequiz-you-lose.jpg"
+                        alt="Screenshot of the defeat page of the Code Quiz.">
+                      <figcaption class="orbit-caption">"You Lost! Play Again?"</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr id="codequiz-section-bottom">
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
