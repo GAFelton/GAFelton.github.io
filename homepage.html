@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=block"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3bc3d54b47.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/3bc3d54b47.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css"
         integrity="sha512-dMUQinc1gbNb95AFtKtP4q/g56T8r9oDxlWy0hrHyzfUbMq/vQztAqaR/FDY/bY0R1Ikc30aq94jyQH2Ix++ug=="
         crossorigin="anonymous" />
@@ -20,9 +20,8 @@
 <body>
 
     <div data-sticky-container>
-        <div class="sticky" data-sticky data-top-anchor="1" data-options="marginTop:0;" style="width:100%">
-            <header class="top-bar my-top-bar sticky" data-sticky data-top-anchor="1" data-options="marginTop:0;"
-                style="width:100%">
+        <div class="sticky" data-sticky data-sticky-on="small" data-top-anchor="1" data-options="marginTop:0;" style="width:100%">
+            <header class="top-bar my-top-bar">
                 <div class="top-bar-left">
                     <h1 class="h1" id="portfolio-title">George Felton's Portfolio</h1>
                 </div>
@@ -44,38 +43,59 @@
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="cell"></div>
-                    <div class="cell"><p class="h5 block-text">Seeking a front-end Web Development Internship.</p></div>
+                    <div class="cell">
+                        <p class="h5 block-text">Seeking a front-end Web Development Internship.</p>
+                    </div>
                 </div>
             </div>
-            
         </div>
     </div>
 
- 
-<div class="grid-container full">
-    <div class="work-feature-block grid-x">
-        <div class="cell medium-7">
-          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+  <div class="grid-container full" id="skills-section">
+        <div class="grid-x">
+            <div class="cell-auto float-center">
+                <ul class="menu align-center" id="circle-menu">
+                    <li class="circle"><img class="circle-icon" src="./assets/images/html5-original.svg" alt="HTML5 Icon" aria-label="HTML5"></li>
+                    <li class="circle"><img class="circle-icon" src="./assets/images/css3-original.svg" alt="CSS Icon" aria-label="CSS"></li>
+                    <li class="circle"><img class="circle-icon" src="./assets/images/javascript-original.svg" alt="JavaScript Icon" aria-label="JavaScript"></li>
+                    <li class="circle"><img class="circle-icon" src="./assets/images/github-original.svg" alt="GitHub Icon" aria-label="GitHub"></li>
+                </ul>     
+            </div>
         </div>
-        <div class="cell medium-5">
-          <h2 class="work-feature-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
+        <div class="grid-x">
+            <div class="cell">
+                
+            </div>
         </div>
-      </div>
     </div>
-      
-      
+
+
+    <div class="grid-container full">
+        <div class="work-feature-block grid-x">
+            <div class="cell medium-7">
+                <img class="work-feature-block-image" src="https://placehold.it/600x400" />
+            </div>
+            <div class="cell medium-5">
+                <h2 class="work-feature-block-header">Project Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet.
+                    Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+                <h2>Project Details</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-<!-- 
+    <!-- 
     <div class="grid-x grid-padding-x">
         <div class="cell" id="resume-cell">
             <a name="resume"></a>

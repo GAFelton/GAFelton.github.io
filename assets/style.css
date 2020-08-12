@@ -14,6 +14,7 @@ body {
 
     color: var(--color-charcoal);
     background-color: var(--color-slate);
+    overflow-x: hidden;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -97,6 +98,30 @@ p {
       margin-top: .5em;
     text-align: center;
     font-weight: bold;
+  }
+
+  #skills-section {
+      background-color: var(--color-imperial-blue);
+      padding: 1em;
+  }
+
+  #circle-menu {
+    width: 50vw;
+    justify-content: space-around;
+  }
+
+  .circle {
+    height: 3em;
+    width: 3em;
+    background-color:var(--color-slate);
+    opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .circle-icon {
+      opacity: 1;
+    max-width: 66%
   }
 
 /* Work Feature Foundation Block */
