@@ -1,3 +1,28 @@
+body {
+    --color-midnight-blue: rgb(26, 40, 84)
+    --color-navy-blue: rgb(15, 62, 101)
+    --color-imperial-blue: rgb(0, 105, 170)
+    --color-arctic-blue: rgb(0, 188, 229)
+    --color-orange: rgb(240, 107, 63)
+    --color-storm-blue: rgb(129, 172, 189)
+    --color-slate: rgb(239, 238, 238)
+    --color-charcoal: rgb(65, 66, 66)
+}
+
+/* .pulloutMenuButton {
+    transform: rotate(0deg);
+    transition: transform 0.5s linear;
+}
+
+.pulloutMenuButton.open{
+    transform: rotate(180deg);
+    transition: transform 0.5s linear;
+} */
+
+.my-top-bar {
+    
+}
+
 .callout-background {
     background-color: rgb(252, 242, 228);
 }
