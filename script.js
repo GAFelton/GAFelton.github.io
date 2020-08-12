@@ -1,6 +1,10 @@
 $(document).foundation();
 
 $(document).ready(
+
+    $("[data-menu-underline-from-center] a").addClass("underline-from-center")
+
+
     
     // $(document).click(function iconflip() {
     //     var icon = $(".pulloutMenuButton");
