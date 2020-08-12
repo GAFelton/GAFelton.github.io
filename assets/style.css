@@ -1,14 +1,76 @@
 body {
-    --color-midnight-blue: rgb(26, 40, 84)
-    --color-navy-blue: rgb(15, 62, 101)
-    --color-imperial-blue: rgb(0, 105, 170)
-    --color-arctic-blue: rgb(0, 188, 229)
-    --color-orange: rgb(240, 107, 63)
-    --color-storm-blue: rgb(129, 172, 189)
-    --color-slate: rgb(239, 238, 238)
-    --color-charcoal: rgb(65, 66, 66)
+    /* Style Guide Color Variables */
+    --color-midnight-blue: rgb(26, 40, 84);
+    --color-navy-blue: rgb(15, 62, 101);
+    --color-imperial-blue: rgb(0, 105, 170);
+    --color-arctic-blue: rgb(0, 188, 229);
+    --color-orange: rgb(240, 107, 63);
+    --color-storm-blue: rgb(129, 172, 189);
+    --color-slate: rgb(239, 238, 238);
+    --color-charcoal: rgb(65, 66, 66);
+
+    --header-font-family: 'Playfair Display', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    --p-font-family: 'Lato', "Trebuchet MS", Helvetica, sans-serif;
+
+    color: var(--color-charcoal);
+    background-color: var(--color-slate);
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+   font-family: var(--header-font-family); 
+}
+
+p {
+    font-family: var(--p-font-family);;
+}
+
+#portfolio-title {
+    font-weight: bold;
+    color: var(--color-orange);
+    text-decoration: solid, var(--color-slate);
+}
+
+.my-top-bar {
+  background-color: var(--color-storm-blue);   
+}
+
+
+.hover-underline-menu {
+    width: 100%;
+  }
+  
+  .hover-underline-menu .menu {
+    background-color: var(--color-charcoal);
+    justify-content: space-around;
+  }
+  
+  .hover-underline-menu .menu a {
+    color: var(--color-slate);
+    padding: 1.2rem 1.5rem;
+    
+  }
+  
+  .hover-underline-menu .menu .underline-from-center {
+    position: relative;
+  }
+  
+  .hover-underline-menu .menu .underline-from-center::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 0.125rem);
+    border-bottom: 0.125rem solid var(--color-slate);
+    left: 50%;
+    right: 50%;
+    transition: all 0.5s ease;
+  }
+  
+  .hover-underline-menu .menu .underline-from-center:hover::after {
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease;
+  }
+
+  
 /* .pulloutMenuButton {
     transform: rotate(0deg);
     transition: transform 0.5s linear;
@@ -18,11 +80,8 @@ body {
     transform: rotate(180deg);
     transition: transform 0.5s linear;
 } */
-
-.my-top-bar {
-    
-}
-
+  
+  
 .callout-background {
     background-color: rgb(252, 242, 228);
 }
