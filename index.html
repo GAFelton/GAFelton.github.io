@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>George Felton - Portfolio</title>
   <link rel="icon" type="image/png" href="./assets/images/gaf-tab-icon.png" />
+  <script src="https://kit.fontawesome.com/3bc3d54b47.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css"
     integrity="sha512-dMUQinc1gbNb95AFtKtP4q/g56T8r9oDxlWy0hrHyzfUbMq/vQztAqaR/FDY/bY0R1Ikc30aq94jyQH2Ix++ug=="
     crossorigin="anonymous" />
@@ -16,7 +17,7 @@
 <body>
 
   <div class="off-canvas-wrapper">
-    <div class="off-canvas position-right reveal-for-large" id="my-info" data-off-canvas>
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
       <div class="grid-x grid-padding-x">
         <div class="cell align-center">
           <br>
@@ -40,21 +41,13 @@
 
     <div class="off-canvas-content" data-off-canvas-content>
       <div data-sticky-container>
-        <div class="title-bar hide-for-large sticky" data-sticky data-sticky-on="small" data-top-anchor="1"
+        <header class="top-bar sticky" data-sticky data-top-anchor="1"
           data-options="marginTop:0;" style="width:100%">
-          <div class="title-bar-right">
-            <span class="title-bar-title">George Felton - Contact Me</span>
-            <button class="menu-icon" type="button" data-open="my-info"></button>
-          </div>
-        </div>
-      </div>
-      <div class="callout callout-background">
-        <a name="page-top"></a>
-        <div class="grid-x">
-          <div class="cell small-12 medium-auto">
+          <div class="top-bar-left">
             <h1 class="h1">George Felton's Portfolio</h1>
+            <button class="hide-for-large" id="offCanvasButton" type="button" data-open="my-info"><i class="fas fa-chevron-circle-left pulloutMenuButton"></i></button>
           </div>
-          <div class="cell small-12 medium-shrink">
+          <div class="top-bar-right">
             <nav>
               <ul class="dropdown menu menu-z-index" data-dropdown-menu>
                 <li><a href="#">Projects</a>
@@ -74,12 +67,16 @@
               </ul>
             </nav>
           </div>
-        </div>
+        </header>
+      </div>
+      <div class="callout callout-background">
+        <a name="page-top"></a>
+
         <p class="lead text-justify">I am a quick-learning entreprenuerially-minded Seattleite with a passion for
           making great products. I am currently enrolled in a full-stack web development coding bootcamp through UW
           which will wrap up in November, 2020. In my spare time, I love to cook, travel, and play board games with
           friends. <br></p>
-        <p class="h3"><strong>Seeking a front-end web development internship.</strong></p>
+        <p><strong>Seeking a front-end web development internship.</strong></p>
 
 
       </div>
@@ -439,9 +436,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
     integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
     crossorigin="anonymous"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
