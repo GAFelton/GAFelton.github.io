@@ -125,6 +125,11 @@ body {
     max-width: 66%
   }
 
+  #headshot {
+    display: block;
+    position: static;
+  }
+
   .image-circle-crop {
     width: 20em;
     height: 20em;
@@ -135,7 +140,7 @@ body {
 .prof-pic {
     display: flex;
     margin: 0 auto;
-    margin-left: -25%;
+    /* margin-left: -25%; */
     height: 100%;
     width: auto;
 }
@@ -164,12 +169,57 @@ body {
   }
 
   .section-divider {
-      background-color: var(--color-arctic-blue);
+      background-color: var(--color-midnight-blue);
       width: 35vw;
   }
 
+  .iframe-container {
+    overflow: hidden;
+    padding-top: 129.42%;
+    position: relative;
+  }
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+  #resume-background {
+    background-color: var(--color-arctic-blue);
+    padding-bottom: 1em;
+  }
+
   #resume-cell {
-    height: 66rem;
+    width: 60vw;
+    color: var(--color-slate);
+}
+
+#bottom-bar {
+    background-color: var(--color-charcoal);
+}
+
+#hex-menu {
+    height: 12rem;
+}
+
+.hex {
+    height: 8em;
+    width: 8em;
+    display: inline-block;
+  }
+
+@media screen and (max-width: 63.9375em) {
+    .image-circle-crop {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #resume-cell {
+        width: 96vw;
+    }
 }
 
 /*   

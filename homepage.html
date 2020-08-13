@@ -29,11 +29,11 @@
             </header>
 
             <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="menu align-center" data-magellan data-offset="100" data-deep-linking="true">
+                    <li><a href="#skills-section">About</a></li>
+                    <li><a href="#projects-header">Projects</a></li>
+                    <li><a href="#resume-background">Resume</a></li>
+                    <li><a href="#bottom-bar">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,9 +52,9 @@
         </div>
     </div>
 
-    <div class="grid-container fluid" id="skills-section">
-        <div class="grid-x grid-margin-x">
-            <div class="cell medium-8 small-order-2 medium-order-1">
+    <div class="grid-container fluid" name="skills-section" id="skills-section" data-magellan-target="skills-section">
+        <div class="grid-x grid-margin-x  align-middle">
+            <div class="cell small-12 medium-8 small-order-2 medium-order-1">
                 <div class="grid-y grid-margin-y">
                     <div class="cell-auto float-center">
                         <ul class="menu align-center" id="circle-menu">
@@ -84,14 +84,21 @@
                     </div>
                 </div>
             </div>
-            <div class="cell medium-4 small-order-1 medium-order-2">
-                <div class="image-circle-crop">
-                    <img src="assets/images/g-headshot-square.JPG" alt="professional headshot of George Felton">
-                </div>
+            <div class="cell small-12 medium-4 small-order-1 medium-order-2">
+                <div id="headshot">
+                <!-- <div class="grid-y">
+                    <div class="cell-auto align-center"> -->
+                        <div class="image-circle-crop float-center">
+                            <img src="assets/images/g-headshot-square.JPG" alt="professional headshot of George Felton">
+                        </div>
+                    </div>
+                    <!-- </div>
+                </div> -->
+                
             </div>
         </div>
     </div>
-    <div class="grid-x" id="projects-header">
+    <div class="grid-x" name="projects-header" id="projects-header" data-magellan-target="projects-header">
         <div class="cell text-center">
             <h3 class="h2">Projects</h3>
         </div>
@@ -100,18 +107,18 @@
 
     <div class="grid-container full">
         <div class="work-feature-block grid-x grid-padding-x">
-            <div class="cell medium-4" data-sticky-container>
-                <div class="sticky" data-sticky data-options="marginTop:9;" data-top-anchor="projects-header:bottom"
-                    data-btm-anchor="covid-section-bottom:bottom  ">
+            <div class="cell small-12 medium-4 small-order-2 medium-order-1" data-sticky-container>
+                <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;" data-top-anchor="projects-header:bottom"
+                    data-btm-anchor="covid-section-bottom:top">
                     <img class="work-feature-block-image" src="assets/images/dashboard.png"
                         alt="Image of the Covid-19 Dashboard page." />
-                    <p class="text-left">Links:
+                    <p class="text-center medium-text-left">Links:
                         <a href="https://gafelton.github.io/project-1-covid-tracker/">Deployed Project</a>
                         <strong> | </strong>
                         <a href="https://github.com/GAFelton/project-1-covid-tracker">GitHub Repo</a></p>
                 </div>
             </div>
-            <div class="cell medium-8">
+            <div class="cell small-12 medium-8 small-order-1 medium-order-2">
                 <h4 class="h3" class="work-feature-block-header">USA Covid-19 Dashboard</h4>
                 <p>
                     The Covid-19 Dashboard displays up-to-date API data on the spread of Covid-19 for any state the user
@@ -158,14 +165,14 @@
                             <li>TrackCorona.live API (City Level Data)</li>
                             <li>Google Map API</li>
                             <li>COVID Tracking Project API (Historical US Data & Historical State Data)</li>
-                            <li id="covid-section-bottom">New York Times API (Article Search)</li>
+                            <li>New York Times API (Article Search)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="grid-x align-center">
+        <div class="grid-x align-center" id="covid-section-bottom">
             <div class="cell section-divider">
                 <p> </p>
             </div>
@@ -173,16 +180,21 @@
 
         <div class="grid-container full">
             <div class="work-feature-block grid-x grid-padding-x">
-                <div class="cell medium-8">
+                <div class="cell small-12 medium-8 small-order-1">
                     <h4 class="h3" class="work-feature-block-header" id="weather-header">Weather Dashboard</h4>
                     <p>
-                        Created a webpage to display current weather conditions and 5 day forecast based on user input. Used the 3 aspects of the OpenWeatherMap API: Current Conditions, UV Index, and the 5 Day Forecast. Stored previous searches in local storage, and dynamically populated a list of previous searches.
+                        Created a webpage to display current weather conditions and 5 day forecast based on user input.
+                        Used the 3 aspects of the OpenWeatherMap API: Current Conditions, UV Index, and the 5 Day
+                        Forecast. Stored previous searches in local storage, and dynamically populated a list of
+                        previous searches.
                     </p>
                     <ul>
                         <h5>Achievements:</h5>
                         <li>All elements except for the search bar are dynamically generated using jQuery.</li>
-                        <li>Page loads with most recent previous search, and the search list will collapse under a button.</li>
-                        <li>Accounted for user search edge cases, such as 404 errors or searching for the same city twice.</li>
+                        <li>Page loads with most recent previous search, and the search list will collapse under a
+                            button.</li>
+                        <li>Accounted for user search edge cases, such as 404 errors or searching for the same city
+                            twice.</li>
                     </ul>
 
                     <div class="grid-x">
@@ -198,98 +210,116 @@
                             <h5>APIs Used:</h5>
                             <ul>
                                 <li>OpenWeatherMap API:
-                                  <ul>
-                                    <li>Current Conditions</li>
-                                    <li>UV Index</li>
-                                    <li id="weather-section-bottom">Five Day Forecast</li>
-                                  </ul>
+                                    <ul>
+                                        <li>Current Conditions</li>
+                                        <li>UV Index</li>
+                                        <li>Five Day Forecast</li>
+                                    </ul>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="cell medium-4" data-sticky-container>
-                    <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
-                        data-top-anchor="weather-header:top" data-btm-anchor="weather-section-bottom:bottom">
+                <div class="cell small-12 medium-4 small-order-2" data-sticky-container>
+                    <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
+                        data-top-anchor="weather-header:top" data-btm-anchor="weather-section-bottom:top">
                         <img class="work-feature-block-image" src="assets/images/weather-dashboard-screenshot.jpg"
                             alt="Screenshot of the weather dashboard." />
-                        <p class="text-left">Links:
-                            <a href="https://gafelton.github.io/weather-dashboard-6/">Link to Deployed Project</a>
+                        <p class="text-center medium-text-left">Links:
+                            <a href="https://gafelton.github.io/weather-dashboard-6/">Deployed Project</a>
                             <strong> | </strong>
-                            <a href="https://github.com/GAFelton/weather-dashboard-6">Link to GitHub Repo</a></p>
+                            <a href="https://github.com/GAFelton/weather-dashboard-6">GitHub Repo</a></p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid-x align-center">
+            <div class="grid-x align-center" id="weather-section-bottom">
                 <div class="cell section-divider">
                     <p> </p>
                 </div>
             </div>
-    
+
             <div class="grid-container full">
                 <div class="work-feature-block grid-x grid-padding-x">
-                    <div class="cell medium-4" data-sticky-container>
-                        <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
-                            data-top-anchor="codequiz-header:top" data-btm-anchor="codequiz-section-bottom:bottom">
+                    <div class="cell small-12 medium-4 small-order-2 medium-order-1" data-sticky-container>
+                        <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
+                            data-top-anchor="codequiz-header:top" data-btm-anchor="resume-background:top">
                             <img class="work-feature-block-image" src="assets/images/screenshot-code-quiz.jpg"
-                            alt="Screenshot of the code quiz in action, on one of the questions."/>
-                            <p class="text-left" aria-label="External Links:">Links:
-                                <a href="https://gafelton.github.io/homework-code-quiz-4/">Link to Deployed Project</a>
+                                alt="Screenshot of the code quiz in action, on one of the questions." />
+                            <p class="text-center medium-text-left" aria-label="External Links:">Links:
+                                <a href="https://gafelton.github.io/homework-code-quiz-4/">Deployed Project</a>
                                 <strong> | </strong>
-                                <a href="https://github.com/GAFelton/homework-code-quiz-4">Link to GitHub Repo</a></p>
+                                <a href="https://github.com/GAFelton/homework-code-quiz-4">GitHub Repo</a></p>
                         </div>
                     </div>
-                    <div class="cell medium-8">
+                    <div class="cell small-12 medium-8 small-order-1 medium-order-2">
                         <h4 class="h3" class="work-feature-block-header" id="codequiz-header">JavaScript Code Quiz</h4>
                         <p>
-                            Created a responsive quiz web-app that uses localStorage to hold high scores and dynamically generates multiple-choice questions and buttons.
+                            Created a responsive quiz web-app that uses localStorage to hold high scores and dynamically
+                            generates multiple-choice questions and buttons.
                         </p>
                         <ul>
                             <h5>Achievements:</h5>
                             <li>Built only using vanilla CSS and JavaScript.</li>
-                            <li>Questions are stored in an array of objects, making it easy to add more questions. Multiple-choice options are jumbled each time the quiz is taken.</li>
-                            <li>High score is based on time remaining, time is deducted for each wrong answer, and a player loses the quiz if they run out of time.</li>
+                            <li>Questions are stored in an array of objects, making it easy to add more questions.
+                                Multiple-choice options are jumbled each time the quiz is taken.</li>
+                            <li>High score is based on time remaining, time is deducted for each wrong answer, and a
+                                player loses the quiz if they run out of time.</li>
                         </ul>
-    
+
                         <div class="grid-x">
                             <div class="cell">
                                 <h5>Tools Used:</h5>
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
-                                    <li id="codequiz-section-bottom">JavaScript</li>
+                                    <li>JavaScript</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-    
 
 
-            <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-            
-    <div class="grid-x grid-padding-x">
-        <div class="cell" id="resume-cell">
-            <a name="resume"></a>
-            <h5 class=" h3 text-center">My Resume:</h5>
-            <p class="text-center"><a
-                    href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf"><em>(Link
-                        to Download)</em></a></p>
-            <iframe
-                src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true"
-                style="width:100%; height:100%;" frameborder="0"></iframe>
-        </div>
-    </div>
-    <hr>
+                <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
+
+                <div class="grid-container fluid" name="resume-background" id="resume-background" data-magellan-target="resume-background">
+                    <div class="grid-x grid-margin-x align-center-middle">
+                        <div class="cell" id="resume-cell">
+                            <a name="resume"></a>
+                            <h5 class=" h3 text-center">My Resume:</h5>
+                            <p class="text-center"><a
+                                    href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf"><em>(Link
+                                        to Download)</em></a></p>
+                            <div class="iframe-container">
+                                <iframe
+                                    src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true"  loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container full" name="bottom-bar" id="bottom-bar" data-magellan-target="bottom-bar">
+                <div class="grid-x">
+                    <div class="cell-auto float-center">
+                        <nav aria-label="Contact and Social Media Links Menu">
+                        <ul class="menu align-center-middle" id="hex-menu">
+                            <li class="hex"><a href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" aria-label="External Link which will open your email client to send an Email to George Felton."><img src="./assets/images/email-hex-icon.png" alt="E-mail"></a></li>
+                            <li class="hex"><a href="https://www.linkedin.com/in/george-a-felton/" aria-label="External Link to George Felton's LinkedIn Page."><img src="./assets/images/linkedin-hex-icon.png" alt="LinkedIn"></a></li>
+                            <li class="hex"><a href="https://github.com/GAFelton" aria-label="External Link to George Felton's GitHub Page."><img src="./assets/images/github-hex-icon.png" alt="GitHub"></a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+            </div>
 
 
-            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
-                integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
-                crossorigin="anonymous"></script>
-            <script src="script.js"></script>
+                <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+                    integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+                    crossorigin="anonymous"></script>
+                <script src="script.js"></script>
 </body>
 
 </html>
