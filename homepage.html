@@ -54,7 +54,7 @@
 
     <div class="grid-container fluid" id="skills-section">
         <div class="grid-x grid-margin-x">
-            <div class="cell medium-8">
+            <div class="cell medium-8 small-order-2 medium-order-1">
                 <div class="grid-y grid-margin-y">
                     <div class="cell-auto float-center">
                         <ul class="menu align-center" id="circle-menu">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cell medium-4">
+            <div class="cell medium-4 small-order-1 medium-order-2">
                 <div class="image-circle-crop">
                     <img src="assets/images/g-headshot-square.JPG" alt="professional headshot of George Felton">
                 </div>
@@ -99,31 +99,148 @@
 
 
     <div class="grid-container full">
-        <div class="work-feature-block grid-x">
-            <div class="cell medium-7">
-                <img class="work-feature-block-image" src="https://placehold.it/600x400" />
+        <div class="work-feature-block grid-x grid-padding-x">
+            <div class="cell medium-4" data-sticky-container>
+                <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
+                    data-top-anchor="projects-header:bottom" data-btm-anchor="covid-section-bottom:top">
+                    <img class="work-feature-block-image" src="assets/images/dashboard.png"
+                        alt="Image of the Covid-19 Dashboard page." />
+                    <p class="text-left">Links:
+                        <a href="https://gafelton.github.io/project-1-covid-tracker/">Deployed Project</a>
+                        <strong> | </strong>
+                        <a href="https://github.com/GAFelton/project-1-covid-tracker">GitHub Repo</a></p>
+                </div>
             </div>
-            <div class="cell medium-5">
-                <h2 class="work-feature-block-header">Project Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet.
-                    Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-                <h2>Project Details</h2>
+            <div class="cell medium-8">
+                <h4 class="h3" class="work-feature-block-header">USA Covid-19 Dashboard</h4>
+                <p>
+                    The Covid-19 Dashboard displays up-to-date API data on the spread of Covid-19 for any state the user
+                    specifies.
+                    There is a landing page featuring a clickable map, and the website is responsive and screen-reader
+                    accessible. I took a leadership role in my 6 person team, ensuring alignment towards project
+                    objectives.
+                </p>
                 <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
+                    <h5>Discovery:</h5>
+                    <ul>
+                        <li>Wrote Initial Project Proposal and spec'd out user requirements.</li>
+                        <li>Designed and built the initial wireframe for the dashboard.</li>
+                    </ul>
+
+                    <h5>Front-end:</h5>
+                    <ul>
+                        <li>Learned Zurb Foundation & built the dashboard page from the ground-up.</li>
+                        <li>Found and hooked up the clickable map for the landing page (index.html).</li>
+                        <li>Made the site responsive and did 1/2 of the work to make it screen-reader accessible.</li>
+                    </ul>
+
+                    <h5>Project Management:</h5>
+                    <ul>
+                        <li>Managed Kanban board & GitHub issues, making sure tasks were divyed up.</li>
+                        <li>Wrote up a git workflow and spent 1:1 time with my teammates to ensure no major merge
+                            conflicts or project-breaking errors occured.</li>
+                    </ul>
                 </ul>
+
+                <div class="grid-x">
+                    <div class="cell auto">
+                        <h5>Tools Used:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS / Zurb Foundation</li>
+                            <li>JavaScript / jQuery</li>
+                            <li>SimpleMaps.com</li>
+                        </ul>
+                    </div>
+                    <div class="cell auto">
+                        <h5>APIs Used:</h5>
+                        <ul>
+                            <li>TrackCorona.live API (City Level Data)</li>
+                            <li>Google Map API</li>
+                            <li>COVID Tracking Project API (Historical US Data & Historical State Data)</li>
+                            <li>New York Times API (Article Search)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
+        <hr id="covid-section-bottom">
+
+        <div class="grid-container full">
+            <div class="work-feature-block grid-x grid-padding-x">
+                <div class="cell medium-8">
+                    <h4 class="h3" class="work-feature-block-header">USA Covid-19 Dashboard</h4>
+                    <p>
+                        The Covid-19 Dashboard displays up-to-date API data on the spread of Covid-19 for any state the
+                        user
+                        specifies.
+                        There is a landing page featuring a clickable map, and the website is responsive and
+                        screen-reader
+                        accessible. I took a leadership role in my 6 person team, ensuring alignment towards project
+                        objectives.
+                    </p>
+                    <ul>
+                        <h5>Discovery:</h5>
+                        <ul>
+                            <li>Wrote Initial Project Proposal and spec'd out user requirements.</li>
+                            <li>Designed and built the initial wireframe for the dashboard.</li>
+                        </ul>
+
+                        <h5>Front-end:</h5>
+                        <ul>
+                            <li>Learned Zurb Foundation & built the dashboard page from the ground-up.</li>
+                            <li>Found and hooked up the clickable map for the landing page (index.html).</li>
+                            <li>Made the site responsive and did 1/2 of the work to make it screen-reader accessible.
+                            </li>
+                        </ul>
+
+                        <h5>Project Management:</h5>
+                        <ul>
+                            <li>Managed Kanban board & GitHub issues, making sure tasks were divyed up.</li>
+                            <li>Wrote up a git workflow and spent 1:1 time with my teammates to ensure no major merge
+                                conflicts or project-breaking errors occured.</li>
+                        </ul>
+                    </ul>
+
+                    <div class="grid-x">
+                        <div class="cell auto">
+                            <h5>Tools Used:</h5>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS / Zurb Foundation</li>
+                                <li>JavaScript / jQuery</li>
+                                <li>SimpleMaps.com</li>
+                            </ul>
+                        </div>
+                        <div class="cell auto">
+                            <h5>APIs Used:</h5>
+                            <ul>
+                                <li>TrackCorona.live API (City Level Data)</li>
+                                <li>Google Map API</li>
+                                <li>COVID Tracking Project API (Historical US Data & Historical State Data)</li>
+                                <li>New York Times API (Article Search)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell medium-4" data-sticky-container>
+                    <!-- <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
+                    data-top-anchor="projects-header:bottom" >
+                    <img class="work-feature-block-image" src="assets/images/dashboard.png"
+                        alt="Image of the Covid-19 Dashboard page." />
+                    <p class="text-left">Links:
+                        <a href="https://gafelton.github.io/project-1-covid-tracker/">Deployed Project</a>
+                        <strong> | </strong>
+                        <a href="https://github.com/GAFelton/project-1-covid-tracker">GitHub Repo</a></p>
+                </div> -->
+                </div>
+            </div>
 
 
+            <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-    <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
-
-    <!-- 
+            <!-- 
     <div class="grid-x grid-padding-x">
         <div class="cell" id="resume-cell">
             <a name="resume"></a>
@@ -139,11 +256,11 @@
     <hr> -->
 
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
-        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+                integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+                crossorigin="anonymous"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>

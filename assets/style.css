@@ -17,12 +17,12 @@ body {
     overflow-x: hidden;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-   font-family: var(--header-font-family); 
+* {
+    font-family: var(--p-font-family);;
 }
 
-p {
-    font-family: var(--p-font-family);;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+   font-family: var(--header-font-family); 
 }
 
 #portfolio-title {
@@ -32,7 +32,8 @@ p {
 }
 
 .my-top-bar {
-  background-color: var(--color-storm-blue);   
+  background-color: var(--color-storm-blue);
+  height: 10vh;
 }
 
 /* Hover Underline SubNav Menu */
@@ -147,14 +148,19 @@ p {
 /* Work Feature Foundation Block */
   .work-feature-block {
     padding: 10px 0;
-    border-top: 1px solid #cacaca;
-    border-bottom: 1px solid #cacaca;
+    border-top: 1px solid var(--color-slate);
+    border-bottom: 1px solid var(--color-slate);
+  }
+
+  .work-feature-block-header {
+      font-weight: bolder;
   }
   
   .work-feature-block-image {
     display: block;
     margin: auto;
     padding: 10px 0;
+    width: 40em;
   }
 
 /*   
