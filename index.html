@@ -24,16 +24,19 @@
             style="width:100%">
             <header class="top-bar my-top-bar">
                 <div class="top-bar-left">
-                    <h1 class="h1" id="portfolio-title">George Felton's Portfolio</h1>
+                    <a href="index.html">
+                        <h1 class="h1" id="portfolio-title">George Felton's Portfolio</h1>
+                    </a>
                 </div>
             </header>
 
             <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center" data-magellan data-offset="100" data-deep-linking="true" data-threshold="600">
-                    <li><a href="#skills-section">About</a></li>
-                    <li><a href="#projects-header">Projects</a></li>
-                    <li><a href="#resume-background">Resume</a></li>
-                    <li><a href="#bottom-bar">Contact</a></li>
+                <ul class="menu align-center" data-magellan data-offset="100" data-deep-linking="true"
+                    data-threshold="600">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,11 +55,12 @@
         </div>
     </div>
 
-    <div class="grid-container fluid" name="skills-section" id="skills-section" data-magellan-target="skills-section">
+    <div class="grid-container fluid" id="skills-section">
         <div class="grid-x grid-margin-x  align-middle">
             <div class="cell small-12 medium-8 small-order-2 medium-order-1">
                 <div class="grid-y grid-margin-y">
                     <div class="cell-auto float-center">
+                        <a name="about" id="about" data-magellan-target="about"></a>
                         <ul class="menu align-center" id="circle-menu">
                             <li class="circle"><img class="circle-icon" src="./assets/images/html5-original.svg"
                                     alt="HTML5 Icon" aria-label="HTML5"></li>
@@ -86,20 +90,21 @@
             </div>
             <div class="cell small-12 medium-4 small-order-1 medium-order-2">
                 <div id="headshot">
-                <!-- <div class="grid-y">
+                    <!-- <div class="grid-y">
                     <div class="cell-auto align-center"> -->
-                        <div class="image-circle-crop float-center">
-                            <img src="assets/images/g-headshot-square.JPG" alt="professional headshot of George Felton">
-                        </div>
+                    <div class="image-circle-crop float-center">
+                        <img src="assets/images/g-headshot-square.JPG" alt="professional headshot of George Felton">
                     </div>
-                    <!-- </div>
+                </div>
+                <!-- </div>
                 </div> -->
-                
+
             </div>
         </div>
     </div>
-    <div class="grid-x" name="projects-header" id="projects-header" data-magellan-target="projects-header">
+    <div class="grid-x" id="projects-header">
         <div class="cell text-center">
+            <a name="projects" id="projects" data-magellan-target="projects"></a>
             <h3 class="h2">Projects</h3>
         </div>
     </div>
@@ -108,8 +113,8 @@
     <div class="grid-container full">
         <div class="work-feature-block grid-x grid-padding-x">
             <div class="cell small-12 medium-4 small-order-2 medium-order-1" data-sticky-container>
-                <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;" data-top-anchor="projects-header:bottom"
-                    data-btm-anchor="covid-section-bottom:top">
+                <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
+                    data-top-anchor="projects-header:bottom" data-btm-anchor="covid-section-bottom:top">
                     <img class="work-feature-block-image" src="assets/images/dashboard.png"
                         alt="Image of the Covid-19 Dashboard page." />
                     <p class="text-center medium-text-left">Links:
@@ -242,8 +247,9 @@
             <div class="grid-container full">
                 <div class="work-feature-block grid-x grid-padding-x">
                     <div class="cell small-12 medium-4 small-order-2 medium-order-1" data-sticky-container>
-                        <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
-                            data-top-anchor="codequiz-header:top" data-btm-anchor="resume-background:top">
+                        <div class="sticky" data-sticky data-sticky-on="medium"
+                            data-options="marginTop:9; marginBottom:2;" data-top-anchor="codequiz-header:top"
+                            data-btm-anchor="resume:top">
                             <img class="work-feature-block-image" src="assets/images/screenshot-code-quiz.jpg"
                                 alt="Screenshot of the code quiz in action, on one of the questions." />
                             <p class="text-center medium-text-left" aria-label="External Links:">Links:
@@ -284,35 +290,44 @@
 
                 <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-                <div class="grid-container fluid" name="resume-background" id="resume-background" data-magellan-target="resume-background">
+                <div class="grid-container fluid" id="resume-background">
                     <div class="grid-x grid-margin-x align-center-middle">
                         <div class="cell" id="resume-cell">
-                            <a name="resume"></a>
+                            <a name="resume" id="resume" data-magellan-target="resume"></a>
                             <h5 class=" h3 text-center">My Resume:</h5>
                             <p class="text-center"><a
                                     href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf"><em>(Link
                                         to Download)</em></a></p>
                             <div class="iframe-container">
                                 <iframe
-                                    src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true"  loading="lazy"></iframe>
+                                    src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/G-Felton-Resume.pdf&embedded=true"
+                                    loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="grid-container full" name="bottom-bar" id="bottom-bar" data-magellan-target="bottom-bar">
-                <div class="grid-x">
-                    <div class="cell-auto float-center">
-                        <nav aria-label="Contact and Social Media Links Menu">
-                        <ul class="menu align-center-middle" id="hex-menu">
-                            <li class="hex"><a href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out" aria-label="External Link which will open your email client to send an Email to George Felton."><img src="./assets/images/email-hex-icon.png" alt="E-mail"></a></li>
-                            <li class="hex"><a href="https://www.linkedin.com/in/george-a-felton/" aria-label="External Link to George Felton's LinkedIn Page."><img src="./assets/images/linkedin-hex-icon.png" alt="LinkedIn"></a></li>
-                            <li class="hex"><a href="https://github.com/GAFelton" aria-label="External Link to George Felton's GitHub Page."><img src="./assets/images/github-hex-icon.png" alt="GitHub"></a></li>
-                        </ul>
-                    </nav>
+                <div class="grid-container full" id="bottom-bar-background">
+                    <div class="grid-x">
+                        <div class="cell-auto float-center">
+                            <a name="contact" id="contact" data-magellan-target="contact"></a>
+                            <nav aria-label="Contact and Social Media Links Menu">
+                                <ul class="menu align-center-middle" id="hex-menu">
+                                    <li class="hex"><a
+                                            href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out"
+                                            aria-label="External Link which will open your email client to send an Email to George Felton."><img
+                                                src="./assets/images/email-hex-icon.png" alt="E-mail"></a></li>
+                                    <li class="hex"><a href="https://www.linkedin.com/in/george-a-felton/"
+                                            aria-label="External Link to George Felton's LinkedIn Page."><img
+                                                src="./assets/images/linkedin-hex-icon.png" alt="LinkedIn"></a></li>
+                                    <li class="hex"><a href="https://github.com/GAFelton"
+                                            aria-label="External Link to George Felton's GitHub Page."><img
+                                                src="./assets/images/github-hex-icon.png" alt="GitHub"></a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
                 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
