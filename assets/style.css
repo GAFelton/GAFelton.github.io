@@ -60,7 +60,7 @@ body {
     content: "";
     position: absolute;
     top: calc(100% - 0.125rem);
-    border-bottom: 0.125rem solid var(--color-slate);
+    border-bottom: 0.125rem solid var(--color-orange);
     left: 50%;
     right: 50%;
     transition: all 0.5s ease;
@@ -161,6 +161,11 @@ body {
     margin: auto;
     padding: 10px 0;
     width: 40em;
+  }
+
+  .section-divider {
+      background-color: var(--color-arctic-blue);
+      width: 50vw;
   }
 
 /*   
