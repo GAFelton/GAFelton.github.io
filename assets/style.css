@@ -103,26 +103,46 @@ p {
   #skills-section {
       background-color: var(--color-imperial-blue);
       padding: 1em;
+      color: var(--color-slate);
   }
 
   #circle-menu {
     width: 50vw;
     justify-content: space-around;
+    margin: 1em;
   }
 
   .circle {
     height: 3em;
     width: 3em;
     background-color:var(--color-slate);
-    opacity: 1;
     border-radius: 50%;
     display: inline-block;
   }
 
   .circle-icon {
-      opacity: 1;
     max-width: 66%
   }
+
+  .image-circle-crop {
+    width: 20em;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.prof-pic {
+    display: flex;
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+}
+
+#projects-header {
+    background-color: var(--color-midnight-blue);
+    color: var(--color-slate);
+}
 
 /* Work Feature Foundation Block */
   .work-feature-block {
