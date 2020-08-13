@@ -165,8 +165,12 @@ body {
 
   .section-divider {
       background-color: var(--color-arctic-blue);
-      width: 50vw;
+      width: 35vw;
   }
+
+  #resume-cell {
+    height: 66rem;
+}
 
 /*   
   @media screen and (max-width: 39.9375em) {
@@ -208,9 +212,7 @@ body {
     background-color: rgba(179, 179, 179, 0.377);
 }
 
-#resume-cell {
-    height: 66rem;
-}
+
 
 #codequiz-margin {
     margin-top: 6em;

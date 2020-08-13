@@ -201,7 +201,7 @@
                                   <ul>
                                     <li>Current Conditions</li>
                                     <li>UV Index</li>
-                                    <li>Five Day Forecast</li>
+                                    <li id="weather-section-bottom">Five Day Forecast</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="cell medium-4" data-sticky-container>
                     <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
-                        data-top-anchor="weather-header:top" data-btm-anchor="">
+                        data-top-anchor="weather-header:top" data-btm-anchor="weather-section-bottom:bottom">
                         <img class="work-feature-block-image" src="assets/images/weather-dashboard-screenshot.jpg"
                             alt="Screenshot of the weather dashboard." />
                         <p class="text-left">Links:
@@ -221,10 +221,55 @@
                 </div>
             </div>
 
+            <div class="grid-x align-center">
+                <div class="cell section-divider">
+                    <p> </p>
+                </div>
+            </div>
+    
+            <div class="grid-container full">
+                <div class="work-feature-block grid-x grid-padding-x">
+                    <div class="cell medium-4" data-sticky-container>
+                        <div class="sticky" data-sticky data-options="marginTop:9; marginBottom:1;"
+                            data-top-anchor="codequiz-header:top" data-btm-anchor="codequiz-section-bottom:bottom">
+                            <img class="work-feature-block-image" src="assets/images/screenshot-code-quiz.jpg"
+                            alt="Screenshot of the code quiz in action, on one of the questions."/>
+                            <p class="text-left" aria-label="External Links:">Links:
+                                <a href="https://gafelton.github.io/homework-code-quiz-4/">Link to Deployed Project</a>
+                                <strong> | </strong>
+                                <a href="https://github.com/GAFelton/homework-code-quiz-4">Link to GitHub Repo</a></p>
+                        </div>
+                    </div>
+                    <div class="cell medium-8">
+                        <h4 class="h3" class="work-feature-block-header" id="codequiz-header">JavaScript Code Quiz</h4>
+                        <p>
+                            Created a responsive quiz web-app that uses localStorage to hold high scores and dynamically generates multiple-choice questions and buttons.
+                        </p>
+                        <ul>
+                            <h5>Achievements:</h5>
+                            <li>Built only using vanilla CSS and JavaScript.</li>
+                            <li>Questions are stored in an array of objects, making it easy to add more questions. Multiple-choice options are jumbled each time the quiz is taken.</li>
+                            <li>High score is based on time remaining, time is deducted for each wrong answer, and a player loses the quiz if they run out of time.</li>
+                        </ul>
+    
+                        <div class="grid-x">
+                            <div class="cell">
+                                <h5>Tools Used:</h5>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li id="codequiz-section-bottom">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
 
             <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-            <!-- 
+            
     <div class="grid-x grid-padding-x">
         <div class="cell" id="resume-cell">
             <a name="resume"></a>
@@ -237,7 +282,7 @@
                 style="width:100%; height:100%;" frameborder="0"></iframe>
         </div>
     </div>
-    <hr> -->
+    <hr>
 
 
             <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
