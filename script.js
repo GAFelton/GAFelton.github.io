@@ -1,8 +1,12 @@
 $(document).foundation();
 
+// document.cookie = 'cookie2=value2; SameSite=None; Secure';
+
 $(document).ready(
 
     $("[data-menu-underline-from-center] a").addClass("underline-from-center")
+
+    
 
 
     
