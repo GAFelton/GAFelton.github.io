@@ -131,14 +131,10 @@ body {
     max-width: 66%
   }
 
-  #headshot {
-    display: block;
-    position: static;
-  }
-
   .image-circle-crop {
-    width: 20em;
-    height: 20em;
+    width: 33vw;
+    max-width: 20em;
+    height: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -146,7 +142,6 @@ body {
 .prof-pic {
     display: flex;
     margin: 0 auto;
-    /* margin-left: -25%; */
     height: 100%;
     width: auto;
 }
@@ -214,72 +209,18 @@ body {
 .hex {
     height: 8em;
     width: 8em;
-    display: inline-block;
+    display: block;
   }
 
 @media screen and (max-width: 63.9375em) {
-    .image-circle-crop {
-        width: 15rem;
-        height: 15rem;
-    }
-
     #resume-cell {
         width: 96vw;
     }
 }
 
-/*   
-  @media screen and (max-width: 39.9375em) {
-    .hover-underline-menu .menu {
-       white-space: nowrap;
-    }
-
-    .hover-underline-menu .menu a .underline-from-center {
-    display: inline-block;
-    min-width: 10%;
-    }
-  } */
-  
-
-/* .pulloutMenuButton {
-    transform: rotate(0deg);
-    transition: transform 0.5s linear;
-}
-
-.pulloutMenuButton.open{
-    transform: rotate(180deg);
-    transition: transform 0.5s linear;
-} */
-  
-  
-.callout-background {
-    background-color: rgb(252, 242, 228);
-}
-
-.menu-z-index {
-    z-index: 14;
-}
-
-.screenshot-carousel {
-    max-width: 50vw;
-}
-
-.carousel-buttons {
-    background-color: rgba(179, 179, 179, 0.377);
-}
-
-
-
-#codequiz-margin {
-    margin-top: 6em;
-}
-
-#bottom-callout {
-    margin-bottom: 0px;
-}
-
-@media screen and (max-width: 39.9375em) {
-    .screenshot-carousel {
-        max-width: 95vw;
-    }
+@media screen and (max-width:25em) {
+  .hex {
+    height: 6em;
+    width: 6em;
+  }
 }
