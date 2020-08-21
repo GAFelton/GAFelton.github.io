@@ -193,6 +193,7 @@ body {
   }
 
   #resume-cell {
+    max-width: 805px;
     width: 60vw;
     color: var(--color-slate);
 }
