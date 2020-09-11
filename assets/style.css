@@ -168,6 +168,10 @@ body {
     width: 40em;
   }
 
+  .modal-image {
+    width: 100%;
+  }
+
   .section-divider {
       background-color: var(--color-midnight-blue);
       width: 35vw;
