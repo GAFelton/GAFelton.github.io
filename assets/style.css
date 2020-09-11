@@ -218,6 +218,12 @@ body {
   transition: all, ease, 40ms;
 }
 
+@media screen and (min-width: 40em) {
+  .medium-text-left {
+    padding-left: .5em;
+  }
+}
+
 @media screen and (max-width: 63.9375em) {
     #resume-cell {
         width: 96vw;
