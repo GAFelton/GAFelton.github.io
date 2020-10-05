@@ -172,6 +172,10 @@ body {
     width: 100%;
   }
 
+  #zen-app-image {
+    width: 50%;
+  }
+
   .section-divider {
       background-color: var(--color-midnight-blue);
       width: 35vw;
@@ -225,6 +229,9 @@ body {
 @media screen and (min-width: 40em) {
   .medium-text-left {
     padding-left: .5em;
+  }
+  #zen-app-image {
+    margin-left: 0.5rem;
   }
 }
 
