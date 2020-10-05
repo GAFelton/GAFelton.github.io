@@ -112,8 +112,8 @@ body {
       color: var(--color-slate);
   }
 
-  #circle-menu {
-    width: 50vw;
+  .circle-menu {
+    width: 20em;
     justify-content: space-around;
     margin: 1em;
   }
@@ -124,10 +124,11 @@ body {
     background-color:var(--color-slate);
     border-radius: 50%;
     display: inline-block;
+    border-bottom: 0px;
   }
 
   .circle-icon {
-    max-width: 66%
+    max-width: 63%;
   }
 
   .image-circle-crop {
@@ -245,5 +246,8 @@ body {
   .hex {
     height: 6em;
     width: 6em;
+  }
+  .circle-menu {
+    max-width: 40vw;
   }
 }

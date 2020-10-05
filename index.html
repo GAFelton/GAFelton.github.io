@@ -62,24 +62,48 @@
                 <div class="grid-y grid-margin-y">
                     <div class="cell-auto float-center">
                         <a name="about" id="about" data-magellan-target="about"></a>
-                        <ul class="menu align-center" id="circle-menu">
-                            <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
-                                title="HTML5"><img class="circle-icon" src="./assets/images/html5-original.svg"
-                                    alt="HTML5 Icon" aria-label="HTML5"></li>
-                            <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
-                                title="CSS3"><img class="circle-icon" src="./assets/images/css3-original.svg"
-                                    alt="CSS Icon" aria-label="CSS"></li>
-                            <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
-                                title="JavaScript"><img class="circle-icon"
-                                    src="./assets/images/javascript-original.svg" alt="JavaScript Icon"
-                                    aria-label="JavaScript"></li>
-                            <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
-                                title="Node.JS"><img class="circle-icon" src="./assets/images/nodejs-original.svg"
-                                    alt="Node.js Icon" aria-label="Node.js"></li>
-                            <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
-                                title="GitHub"><img class="circle-icon" src="./assets/images/github-original.svg"
-                                    alt="GitHub Icon" aria-label="GitHub"></li>
+                        <ul class="horizontal align-center menu">
+                            <li>
+                                <ul class="menu align-center circle-menu">
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="HTML5"><img class="circle-icon" src="./assets/images/icons/html5-original.svg"
+                                            alt="HTML5 Icon" aria-label="HTML5"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="CSS3"><img class="circle-icon" src="./assets/images/icons/css3-original.svg"
+                                            alt="CSS Icon" aria-label="CSS"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="JavaScript"><img class="circle-icon" src="./assets/images/icons/javascript-original.svg" 
+                                            alt="JavaScript Icon" aria-label="JavaScript"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Foundation"><img class="circle-icon" src="./assets/images/icons/foundation-plain.svg"
+                                            alt="Foundation Icon" aria-label="Foundation"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Handlebars"><img class="circle-icon" src="./assets/images/icons/handlebars-original.svg"
+                                            alt="Handlebars Icon" aria-label="Handlebars"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="menu align-center circle-menu">
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Node.JS"><img class="circle-icon" src="./assets/images/icons/nodejs-original.svg"
+                                            alt="Node.js Icon" aria-label="Node.js"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Express.js"><img class="circle-icon" src="./assets/images/icons/express-original.svg"
+                                            alt="Express.js Icon" aria-label="Express.js"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Heroku"><img class="circle-icon" src="./assets/images/icons/heroku-original.svg"
+                                            alt="Heroku Icon" aria-label="Heroku"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="Sequelize"><img class="circle-icon" src="./assets/images/icons/sequelize-original.svg"
+                                            alt="Sequelize Icon" aria-label="Sequelize"></li>
+                                    <li class="circle" data-tooltip class="top" data-click-open="false" tabindex="2"
+                                        title="MongoDB"><img class="circle-icon" src="./assets/images/icons/mongodb-original.svg"
+                                            alt="MongoDB Icon" aria-label="MongoDB"></li>
+                                </ul>
+                            </li>
                         </ul>
+                        
+                        
                     </div>
                     <div class="cell">
                         <h2 class="h3 text-center">Brand Statement</h2>
@@ -116,26 +140,34 @@
             <div class="cell small-12 medium-8 small-order-1">
                 <h4 class="h3" class="work-feature-block-header" id="zen-section-top">Zen App</h4>
                 <p>
-                    Zen App is a simple inspirational bullet journal in the cloud. 
-                    Zen App is built on a NodeJS backend, with Express for server/routing, Sequelize for database handling, Handlebars for views, and is hosted on Heroku. It makes use of two external APIs, which are called once a day to build an image/quote pairing.
-                    Users (authenticated via Passport with password encryption by bCrypt.js) have the option to write short reflections on the quotes they find inspiring, and can make use of a daily checklist in the app or look at past reflections.
-                    In addition to working on the backend, I took on project management for my team, ensuring alignment towards our overall objectives.
-                    Our project took 6 people 10 days to develop, and won the "Most Creative" Award after our project presentations.
+                    Zen App is a simple inspirational bullet journal in the cloud.
+                    Zen App is built on a NodeJS backend, with Express for server/routing, Sequelize for database
+                    handling, Handlebars for views, and is hosted on Heroku. It makes use of two external APIs, which
+                    are called once a day to build an image/quote pairing.
+                    Users (authenticated via Passport with password encryption by bCrypt.js) have the option to write
+                    short reflections on the quotes they find inspiring, and can make use of a daily checklist in the
+                    app or look at past reflections.
+                    In addition to working on the backend, I took on project management for my team, ensuring alignment
+                    towards our overall objectives.
+                    Our project took 6 people 10 days to develop, and won the "Most Creative" Award after our project
+                    presentations.
                 </p>
                 <ul>
                     <h5>Back-end:</h5>
                     <ul>
                         <li>Implemented user authentication using Passport, with bCrypt for password hashing.</li>
-                        <li>Wrote the initial database schemas (for users, favorites, checklist, and quotes), and identified routes for myself and my teammates to write.</li>
+                        <li>Wrote the initial database schemas (for users, favorites, checklist, and quotes), and
+                            identified routes for myself and my teammates to write.</li>
                         <li>Hooked up the checklist to our database.</li>
                     </ul>
 
                     <h5>Project Management:</h5>
                     <ul>
                         <li>Managed Kanban board & GitHub issues, making sure tasks were divyed up.</li>
-                        <li>Helped teammates with the git workflow, and managed ESLint and integrated Travis CI configuration and checks.</li>
+                        <li>Helped teammates with the git workflow, and managed ESLint and integrated Travis CI
+                            configuration and checks.</li>
                     </ul>
-                    
+
                 </ul>
 
                 <div class="grid-x">
@@ -162,13 +194,13 @@
                     data-top-anchor="zen-section-top:top" data-btm-anchor="zen-section-bottom:top">
                     <img class="work-feature-block-image" id="zen-app-image" src="assets/images/zen-app-screenshot.png"
                         alt="Image of the Covid-19 Dashboard page." data-toggle="zen-app-modal" />
-                        <div class="large reveal" id="zen-app-modal" data-reveal>
-                            <img class="modal-image" src="assets/images/zen-app-screenshot.png"
+                    <div class="large reveal" id="zen-app-modal" data-reveal>
+                        <img class="modal-image" src="assets/images/zen-app-screenshot.png"
                             alt="Image of the Covid-19 Dashboard page." />
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <p class="text-center medium-text-left">Links:
                         <a href="https://mighty-gorge-04831.herokuapp.com/">Deployed Project</a>
                         <strong> | </strong>
@@ -191,13 +223,13 @@
                     data-top-anchor="mvc-header:top" data-btm-anchor="mvc-section-bottom:top">
                     <img class="work-feature-block-image" src="assets/images/eat-da-burger-screenshot.png"
                         alt="Screenshot of the Eat-Da-Burger application." data-toggle="burger-modal" />
-                        <div class="large reveal" id="burger-modal" data-reveal>
-                            <img class="modal-image" src="assets/images/eat-da-burger-screenshot.png"
-                        alt="Screenshot of the Eat-Da-Burger application." />
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
+                    <div class="large reveal" id="burger-modal" data-reveal>
+                        <img class="modal-image" src="assets/images/eat-da-burger-screenshot.png"
+                            alt="Screenshot of the Eat-Da-Burger application." />
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <p class="text-center medium-text-left" aria-label="External Links:">Links:
                         <a href="https://gentle-chamber-60009.herokuapp.com/">Deployed Project</a>
                         <strong> | </strong>
@@ -240,10 +272,13 @@
                 <div class="cell small-12 medium-8 small-order-1">
                     <h4 class="h3" class="work-feature-block-header">USA Covid-19 Dashboard</h4>
                     <p>
-                        The Covid-19 Dashboard displays up-to-date API data on the spread of Covid-19 for any state the user specifies (or the USA as a whole).
-                        There is a landing page featuring a clickable map, and the website is responsive and screen-reader accessible. 
+                        The Covid-19 Dashboard displays up-to-date API data on the spread of Covid-19 for any state the
+                        user specifies (or the USA as a whole).
+                        There is a landing page featuring a clickable map, and the website is responsive and
+                        screen-reader accessible.
                         I took a leadership role in my 6 person team, ensuring alignment towards project objectives.
-                        Our project took 6 people 2 weeks to develop, and won the "Most Technical" Award after our project presentations.
+                        Our project took 6 people 2 weeks to develop, and won the "Most Technical" Award after our
+                        project presentations.
                     </p>
                     <ul>
                         <h5>Discovery:</h5>
@@ -294,13 +329,13 @@
                         data-top-anchor="mvc-section-bottom:bottom" data-btm-anchor="covid-section-bottom:top">
                         <img class="work-feature-block-image" src="assets/images/dashboard.png"
                             alt="Image of the Covid-19 Dashboard page." data-toggle="cov-dash-modal" />
-                            <div class="large reveal" id="cov-dash-modal" data-reveal>
-                                <img class="modal-image" src="assets/images/dashboard.png"
+                        <div class="large reveal" id="cov-dash-modal" data-reveal>
+                            <img class="modal-image" src="assets/images/dashboard.png"
                                 alt="Image of the Covid-19 Dashboard page." />
-                                <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <p class="text-center medium-text-left">Links:
                             <a href="https://gafelton.github.io/project-1-covid-tracker/">Deployed Project</a>
                             <strong> | </strong>
@@ -363,13 +398,13 @@
                         data-top-anchor="weather-header:top" data-btm-anchor="weather-section-bottom:top">
                         <img class="work-feature-block-image" src="assets/images/weather-dashboard-screenshot.jpg"
                             alt="Screenshot of the weather dashboard." data-toggle="weath-dash-modal" />
-                            <div class="large reveal" id="weath-dash-modal" data-reveal>
-                                <img class="modal-image" src="assets/images/weather-dashboard-screenshot.jpg"
+                        <div class="large reveal" id="weath-dash-modal" data-reveal>
+                            <img class="modal-image" src="assets/images/weather-dashboard-screenshot.jpg"
                                 alt="Screenshot of the weather dashboard." />
-                                <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <p class="text-center medium-text-left">Links:
                             <a href="https://gafelton.github.io/weather-dashboard-6/">Deployed Project</a>
                             <strong> | </strong>
@@ -384,53 +419,53 @@
                 </div>
             </div>
 
-                <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
+            <!-- <a href='https://www.freepik.com/photos/pattern'>Pattern photo created by wirestock - www.freepik.com</a> -->
 
-                <div class="grid-container fluid" id="resume-background">
-                    <div class="grid-x grid-margin-x align-center-middle">
-                        <div class="cell" id="resume-cell">
-                            <a name="resume" id="resume" data-magellan-target="resume"></a>
-                            <h5 class=" h3 text-center">My Resume:</h5>
-                            <p class="text-center"><a
-                                    href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/GeorgeFelton-Resume.pdf"><em>(Link
-                                        to Download)</em></a></p>
-                            <div class="iframe-container">
-                                <iframe
-                                    src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/GeorgeFelton-Resume.pdf&embedded=true"
-                                    loading="eager"></iframe>
-                            </div>
+            <div class="grid-container fluid" id="resume-background">
+                <div class="grid-x grid-margin-x align-center-middle">
+                    <div class="cell" id="resume-cell">
+                        <a name="resume" id="resume" data-magellan-target="resume"></a>
+                        <h5 class=" h3 text-center">My Resume:</h5>
+                        <p class="text-center"><a
+                                href="https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/GeorgeFelton-Resume.pdf"><em>(Link
+                                    to Download)</em></a></p>
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://docs.google.com/gview?url=https://github.com/GAFelton/GAFelton.github.io/raw/master/assets/GeorgeFelton-Resume.pdf&embedded=true"
+                                loading="eager"></iframe>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="grid-container full" id="bottom-bar-background">
-                    <div class="grid-x">
-                        <div class="cell-auto float-center">
-                            <a name="contact" id="contact" data-magellan-target="contact"></a>
-                            <nav aria-label="Contact and Social Media Links Menu">
-                                <ul class="menu align-center-middle" id="hex-menu">
-                                    <li class="hex"><a
-                                            href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out"
-                                            aria-label="External Link which will open your email client to send an Email to George Felton."><img
-                                                src="./assets/images/email-hex-icon.png" alt="E-mail"></a></li>
-                                    <li class="hex"><a href="https://www.linkedin.com/in/george-a-felton/"
-                                            aria-label="External Link to George Felton's LinkedIn Page."><img
-                                                src="./assets/images/linkedin-hex-icon.png" alt="LinkedIn"></a></li>
-                                    <li class="hex"><a href="https://github.com/GAFelton"
-                                            aria-label="External Link to George Felton's GitHub Page."><img
-                                                src="./assets/images/github-hex-icon.png" alt="GitHub"></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+            <div class="grid-container full" id="bottom-bar-background">
+                <div class="grid-x">
+                    <div class="cell-auto float-center">
+                        <a name="contact" id="contact" data-magellan-target="contact"></a>
+                        <nav aria-label="Contact and Social Media Links Menu">
+                            <ul class="menu align-center-middle" id="hex-menu">
+                                <li class="hex"><a
+                                        href="mailto:gafelton@gmail.com?subject=I%20Saw%20your%20Portfolio%20and%20Wanted%20to%20Reach%20Out"
+                                        aria-label="External Link which will open your email client to send an Email to George Felton."><img
+                                            src="./assets/images/email-hex-icon.png" alt="E-mail"></a></li>
+                                <li class="hex"><a href="https://www.linkedin.com/in/george-a-felton/"
+                                        aria-label="External Link to George Felton's LinkedIn Page."><img
+                                            src="./assets/images/linkedin-hex-icon.png" alt="LinkedIn"></a></li>
+                                <li class="hex"><a href="https://github.com/GAFelton"
+                                        aria-label="External Link to George Felton's GitHub Page."><img
+                                            src="./assets/images/github-hex-icon.png" alt="GitHub"></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
+            </div>
 
 
-                <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
-                    integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
-                    crossorigin="anonymous"></script>
-                <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+                integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+                crossorigin="anonymous"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>
