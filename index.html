@@ -155,6 +155,71 @@
 
     <div class="grid-container full">
         <div class="work-feature-block grid-x grid-padding-x">
+            <div class="cell small-12 medium-8 small-order-1">
+                <h4 class="h3" class="work-feature-block-header" id="books-section-top">React Google Books Search</h4>
+                <p>
+                    A React-based Books Search & Save app - demonstrating full MERN-stack capabilities. <br>
+                    Users can search for and add new books to their collection using Google's Book Search API,
+                    then can view their collection and mark books as read or remove them entirely. Books are saved to
+                    a MongoDB database, accessed from the frontend through Axios, Express router, and Mongoose.
+                    The server is hosted on Heroku, with database handling by MongoDB Atlas. <br>
+                    The backend is built on NodeJS, with React handling the frontend. Book List and Book List item are the main 
+                    components that the user interacts with, dynamically generating content based on API calls either
+                    to the backend database or to the Google Books API.<br>
+                </p>
+
+                <div class="grid-x">
+                    <div class="cell auto">
+                        <h5>Frontend Tools Used:</h5>
+                        <ul>
+                            <li>React</li>
+                            <li>JSX</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div class="cell auto">
+                        <h5>Backend Used:</h5>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>Axios</li>
+                            <li>Express</li>
+                            <li>Mongoose/MongoDB</li>
+                            <li>Heroku</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cell small-12 medium-4 small-order-2" data-sticky-container>
+                <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
+                    data-top-anchor="books-section-top:top" data-btm-anchor="books-section-bottom:top">
+                    <img class="work-feature-block-image" src="assets/images/books-saved-screenshot.png"
+                        alt="Image of the Saved Books Page." data-toggle="books-modal" />
+                    <div class="large reveal" id="books-modal" data-reveal>
+                        <img class="modal-image" src="assets/images/books-saved-screenshot.png"
+                            alt="Image of the Saved Books Page." />
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <p class="text-center medium-text-left">Links:
+                        <a href="https://evening-basin-07741.herokuapp.com/">Deployed Project</a>
+                        <strong> | </strong>
+                        <a href="https://github.com/GAFelton/books-search-react-app">GitHub Repo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-x align-center" id="books-section-bottom">
+        <div class="cell section-divider">
+            <p> </p>
+        </div>
+    </div>
+
+
+    <div class="grid-container full">
+        <div class="work-feature-block grid-x grid-padding-x">
             <div class="cell small-12 medium-8 small-order-1 medium-order-2">
                 <h4 class="h3" class="work-feature-block-header" id="fitness-header">MongoDB Fitness Tracker</h4>
                 <p>
@@ -271,10 +336,10 @@
                 <div class="sticky" data-sticky data-sticky-on="medium" data-options="marginTop:9; marginBottom:2;"
                     data-top-anchor="zen-section-top:top" data-btm-anchor="zen-section-bottom:top">
                     <img class="work-feature-block-image" id="zen-app-image" src="assets/images/zen-app-screenshot.png"
-                        alt="Image of the Covid-19 Dashboard page." data-toggle="zen-app-modal" />
+                        alt="Image of the Zen App page." data-toggle="zen-app-modal" />
                     <div class="large reveal" id="zen-app-modal" data-reveal>
                         <img class="modal-image" src="assets/images/zen-app-screenshot.png"
-                            alt="Image of the Covid-19 Dashboard page." />
+                            alt="Image of the Zen App page." />
                         <button class="close-button" data-close aria-label="Close reveal" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
